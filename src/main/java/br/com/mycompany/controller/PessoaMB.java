@@ -10,14 +10,13 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
-import javax.inject.Named;
 import javax.faces.view.ViewScoped;
 
 /**
  *
  * @author Raphael
  */
-@ManagedBean
+@ManagedBean(name="pessoaMB")
 @ViewScoped
 public class PessoaMB implements Serializable{
 
