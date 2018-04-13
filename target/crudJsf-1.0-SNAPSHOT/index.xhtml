@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Cadastro de Pessoas</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputLabel value="Nome: " />
+                <h:inputText id="nome" value="#{pessoaMB.pessoa.nome}" size="20"/>
+                <h:message for="nome" />
+                
+                <h:outputLabel value="Endereço " />
+                <h:inputText id="end" value="#{pessoaMB.pessoa.endereco}" size="20"/>
+                <h:message for="end" />
+                
+                <h:outputLabel value="Número: " />
+                <h:inputText id="num" value="#{pessoaMB.pessoa.numero}" size="20"/>
+                <h:message for="num" />
+                
+                <h:outputLabel value="Telefone: " />
+                <h:inputText id="tel" value="#{pessoaMB.pessoa.telefone}" size="20"/>
+                <h:message for="tel" />
+                
+                <h:outputLabel value="Cidade: " />
+                <h:inputText id="cidd" value="#{pessoaMB.pessoa.cidade}" size="20"/>
+                <h:message for="cidd" />
+                
+                <h:commandButton id="btnE" value="Enviar" type="submit" action="#{pessoaMB.salvarPessoa}"/>
+                <h:commandButton id="btnL" value="Limpar" type="reset"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
